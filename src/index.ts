@@ -12,7 +12,7 @@ async function getWalletInfo(wallet: typeof Wallet) {
             wallet.getBalance()
         ])
         if (count > 0 || +balance > 0) {
-            console.log(count, +balance, wallet.address, wallet.privateKey)
+            console.log('ok', count, +balance, wallet.address, wallet.privateKey)
         } else {
             console.log(wallet.address, wallet.privateKey)
         }
