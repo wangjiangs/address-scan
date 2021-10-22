@@ -437,7 +437,14 @@ elliptic@6.5.4:
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
 
-ethers@^5.5.1:
+ethers-multicall@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.npmjs.org/ethers-multicall/-/ethers-multicall-0.2.1.tgz#0c01dc50f3b87c93be11e39bc8bc668bfa762b60"
+  integrity sha512-buSg3j75HhMnRiZ+hIXfJYA/MUZbhukE1oczeluM7O+4yWjhqI98ADcQ0bPr8EOpwtV4J3Eba47fkbx5GJpz5Q==
+  dependencies:
+    ethers "^5.0.0"
+
+ethers@^5.0.0, ethers@^5.5.1:
   version "5.5.1"
   resolved "https://registry.npmjs.org/ethers/-/ethers-5.5.1.tgz#d3259a95a42557844aa543906c537106c0406fbf"
   integrity sha512-RodEvUFZI+EmFcE6bwkuJqpCYHazdzeR1nMzg+YWQSmQEsNtfl1KHGfp/FWZYl48bI/g7cgBeP2IlPthjiVngw==
