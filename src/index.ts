@@ -14,7 +14,7 @@ async function getWalletInfo(wallet: typeof Wallet) {
         if (count > 0 || +balance > 0) {
             console.log('ok', count, +balance, wallet.address, wallet.privateKey)
         } else {
-            console.log(wallet.address, wallet.privateKey)
+            console.log('fail', count, +balance, wallet.address, wallet.privateKey)
         }
     } catch (e) {
         console.log('error', e)
