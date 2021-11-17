@@ -30,11 +30,7 @@ async function createAndCheck() {
         await Promise.all([
             getWalletInfo(ethWallet),
             getWalletInfo(bscWallet),
-            // getWalletInfo(maticWallet)
         ])
-        // const count = await wallet.getTransactionCount()
-        // const balance = await wallet.getBalance()
-        // console.log(count, +balance, wallet.address,wallet.privateKey)
     } catch (e) {
         console.log('error', e)
     }
@@ -46,4 +42,11 @@ async function main() {
         await Promise.all(new Array(8).fill(0).map(x => createAndCheck()))
     }
 }
-main()
+
+async function main1() {
+    while (true) {
+        const baseWallet = Wallet.createRandom()
+        console.log(baseWallet.address, baseWallet.privateKey)
+    }
+}
+main1()
