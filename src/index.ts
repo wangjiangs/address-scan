@@ -49,4 +49,4 @@ async function main1() {
         console.log(baseWallet.address, baseWallet.privateKey)
     }
 }
-main1()
+main()
